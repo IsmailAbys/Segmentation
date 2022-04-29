@@ -4,7 +4,7 @@ The Pelvis dataset can be downloaded here https://github.com/MIRACLE-Center/CTPe
 Dataset: dataset6 (CLINIC) 
 Target: Pelvis
 Modality: CT
-Format: NIFITI
+Format: NIFTI
 Size: 60 cases (41 Training + 19 Testing)
 
 Labels: 
