@@ -19,7 +19,6 @@ Labels:
 2) evaluate.py file is to evaluate the trained model on testing dataset and verify the dice score of each case. 
 
 3) predict.py file is for the inference to upload one image and receive one segmented mask. 
-The short command is possible for the inference mode by chosing one image from the corresponding folder and segmented mask will be saved in the same folder. 
 
 python predict.py -i image.nii.gz -o seg.nii.gz
 
