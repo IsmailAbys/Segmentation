@@ -18,9 +18,7 @@ Labels:
 
 2) evaluate.py file is to evaluate the trained model on testing dataset and verify the dice score of each case. 
 
-3) predict.py file is for the inference to upload one image and receive one segmented mask. 
-
-python predict.py -i image.nii.gz -o seg.nii.gz
+3) predict.py file is for the inference to upload one image and receive one segmented mask: python predict.py -i image.nii.gz -o seg.nii.gz
 
 
 
