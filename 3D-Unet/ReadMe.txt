@@ -1,7 +1,9 @@
 This folder contains python scripts for 3D Unet architechture which is based on integrated MONAI into an existing PyTorch medical DL program. 
-The Pelvis dataset can be downloaded here https://github.com/MIRACLE-Center/CTPelvic1K
+The Pelvis dataset can be downloaded here https://zenodo.org/record/4588403#.Ym-WotpBy3B
 
 Dataset: dataset6 (CLINIC) 
+Images: CTPelvic1K_dataset6_data.tar.gz
+Masks: CTPelvic1K_dataset6_Anonymized_mask.tar.gz
 Target: Pelvis
 Modality: CT
 Format: NIFTI
