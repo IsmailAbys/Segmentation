@@ -1,0 +1,5 @@
+For the Early Stopping use instalation following this repository 
+https://github.com/Bjarten/early-stopping-pytorch
+
+Use the "pytorchtools.py" file from my repository to do an EarlyStop based on validation mean dice.
+Place the file in the same folder where the script or notebook is located. 
