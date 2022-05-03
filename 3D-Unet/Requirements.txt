@@ -1,4 +1,4 @@
-cuda install cudatoolkit=11.3
+conda install cudatoolkit=11.3
 conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 
 MONAI installation: https://docs.monai.io/en/stable/installation.html
