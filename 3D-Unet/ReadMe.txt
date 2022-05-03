@@ -16,7 +16,7 @@ Labels:
 3: left_hip, 
 4: lumbar_vertebra    
 
-1) training.py file is for 3D Unet training.
+1) train.py file is for 3D Unet training, works with Early Stopping.
 2) evaluate.py file is to evaluate the trained model on testing dataset and verify the dice score of each case. 
 3) predict.py file is for the inference to upload one image and receive one segmented mask: python predict.py -i image.nii.gz -o seg.nii.gz
 
