@@ -25,8 +25,10 @@ Labels:
 
 2) evaluate.py --> In this file you need to modify "train_dir" and "test_dir". You need to write paths where your training and testing datasets are stored. It evaluates the trained model on testing dataset and verify the dice score of each case. 
  
-3) predict.py --> In this file you need to modify only "model_dir" and write the path where the model file "best_metric_model.pth" is saved after training. It uploads one image and outputs one segmented mask: python predict.py -i image.nii.gz -o seg.nii.gz
+3) predict.py --> In this file you need to modify only "model_dir" and write the path where the model file "best_metric_model.pth" is saved after training. It uploads one image and outputs one segmented mask: 
+python predict.py -i image.nii.gz -o seg.nii.gz
      
-4) slicer.py -->  In this file you don't need to modify anything, just place the file in the same folder where is a segmented mask to run the script. It transforms segmented mask to make it suitable for 3D slicer visualization: python slicer.py -i seg.nii.gz -o name.nii.gz
+4) slicer.py -->  In this file you don't need to modify anything, just place the file in the same folder where is a segmented mask to run the script. It transforms segmented mask to make it suitable for 3D slicer visualization: 
+python slicer.py -i seg.nii.gz -o name.nii.gz
 
 5) pytorchtools.py --> this file is for early stopping and it should be placed in the same folder where the train.py file is located. 
