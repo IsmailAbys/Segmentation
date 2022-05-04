@@ -28,7 +28,7 @@ Labels:
 2) evaluate.py --> evaluates the trained model on testing dataset and verify the dice score of each case. 
    In this file you need to modify "train_dir" and "test_dir". You need to write paths where your training and testing datasets are stored. 
 
-3) predict.py --> the inference to upload one image and receive one segmented mask: python predict.py -i image.nii.gz -o seg.nii.gz
+3) predict.py --> uploads one image and outputs one segmented mask: python predict.py -i image.nii.gz -o seg.nii.gz
    In this file you need to modify only "model_dir" and write the path where the model file "best_metric_model.pth" is saved after training.
    
 4) slicer.py --> transforms segmented mask to make it suitable for 3D slicer visualization: python slicer.py -i seg.nii.gz -o name.nii.gz
