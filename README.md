@@ -26,7 +26,7 @@ Labels:
    If you are getting a memory error (CUDA out of memory), in "train_loader" change batch_size to 1.
 
 2) evaluate.py --> evaluates the trained model on testing dataset and verify the dice score of each case. 
-   In this file you need to modify only "train_dir" and "test_dir". You need to write paths where your training and testing datasets are stored. 
+   In this file you need to modify "train_dir" and "test_dir". You need to write paths where your training and testing datasets are stored. 
 
 3) predict.py --> the inference to upload one image and receive one segmented mask: python predict.py -i image.nii.gz -o seg.nii.gz
    In this file you need to modify only "model_dir" and write the path where the model file "best_metric_model.pth" is saved after training.
