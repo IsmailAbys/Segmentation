@@ -16,9 +16,11 @@ Labels:
 3: left_hip, 
 4: lumbar_vertebra    
 
-1) train.py file --> 3D Unet training which works with Early Stopping (pytorchtools.py).
+1) train.py file --> 3D Unet training which works with Early Stopping.
 2) evaluate.py file --> evaluates the trained model on testing dataset and verify the dice score of each case. 
 3) predict.py file --> the inference to upload one image and receive one segmented mask: python predict.py -i image.nii.gz -o seg.nii.gz
+4) pytorchtools.py file --> for early stopping and it should be placed in the same folder where train file is place.
+5) Slicer3D.py file --> to transform segmented mask and make it without background label for 3D slicer visualization.
 
 
 
