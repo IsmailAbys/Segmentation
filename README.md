@@ -34,4 +34,4 @@ Labels:
 4) slicer.py --> transforms segmented mask to make it suitable for 3D slicer visualization: python slicer.py -i seg.nii.gz -o name.nii.gz
    In this file you don't need to modify anything, just place the file in the same folder where is a segmented mask to run the script.
 
-5) pytorchtools.py --> this file is for early stopping and it should be placed in the same folder where the train file is located. 
+5) pytorchtools.py --> this file is for early stopping and it should be placed in the same folder where the train.py file is located. 
