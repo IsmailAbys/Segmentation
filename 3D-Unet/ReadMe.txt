@@ -19,5 +19,5 @@ Labels:
 1) train.py --> 3D Unet training which works with Early Stopping.
 2) evaluate.py --> evaluates the trained model on testing dataset and verify the dice score of each case. 
 3) predict.py --> the inference to upload one image and receive one segmented mask: python predict.py -i image.nii.gz -o seg.nii.gz
-4) pytorchtools.py --> for early stopping and it should be placed in the same folder where train file is place.
-5) slicer.py --> to transform segmented mask and make it without background for 3D slicer visualization: python slicer.py -i seg.nii.gz -o name.nii.gz
+4) slicer.py --> to transform segmented mask and make it without background for 3D slicer visualization: python slicer.py -i seg.nii.gz -o name.nii.gz
+5) pytorchtools.py --> for early stopping and it should be placed in the same folder where train file is place.
