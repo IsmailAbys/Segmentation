@@ -19,7 +19,16 @@ Labels:
 4: lumbar_vertebra    
 
 1) train.py --> 3D Unet training which works with Early Stopping.
+   In this file you need to modify only "train_dir" and write the path where your training dataset is stored. 
+   If you are getting a memory error (CUDA out of memory), in "train_loader" change batch_size to 1.
+
 2) evaluate.py --> evaluates the trained model on testing dataset and verify the dice score of each case. 
+   In this file you need to modify only "train_dir" and "test_dir". You need to write paths where your training and testing datasets are stored. 
+
 3) predict.py --> the inference to upload one image and receive one segmented mask: python predict.py -i image.nii.gz -o seg.nii.gz
+   In this file you need to modify only "model_dir" and write the path where the model file "best_metric_model.pth" is saved after training.
+   
 4) slicer.py --> to transform segmented mask and make it without background for 3D slicer visualization: python slicer.py -i seg.nii.gz -o name.nii.gz
-5) pytorchtools.py --> for early stopping and it should be placed in the same folder where train file is place.
+   In this file you don't need to modify anything, just place the file in the same folder where is a segmented mask to run the script.
+
+5) pytorchtools.py --> for early stopping and it should be placed in the same folder where the train file is located. 
