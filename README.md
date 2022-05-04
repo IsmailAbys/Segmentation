@@ -21,17 +21,12 @@ Labels:
 3: left_hip, 
 4: lumbar_vertebra    
 
-1) train.py --> 3D Unet training which works with Early Stopping.
-   In this file you need to modify only "train_dir" and write the path where your training dataset is stored. 
-   If you are getting a memory error (CUDA out of memory), in "train_loader" change batch_size to 1.
+1) train.py --> 3D Unet training which works with Early Stopping. In this file you need to modify only "train_dir" and write the path where your training dataset is stored. If you are getting a memory error (CUDA out of memory), in "train_loader" change batch_size to 1.
 
-2) evaluate.py --> evaluates the trained model on testing dataset and verify the dice score of each case. 
-   In this file you need to modify "train_dir" and "test_dir". You need to write paths where your training and testing datasets are stored. 
-
-3) predict.py --> uploads one image and outputs one segmented mask: python predict.py -i image.nii.gz -o seg.nii.gz
-   In this file you need to modify only "model_dir" and write the path where the model file "best_metric_model.pth" is saved after training. 
-      
-4) slicer.py -->  transforms segmented mask to make it suitable for 3D slicer visualization: python slicer.py -i seg.nii.gz -o name.nii.gz
-   In this file you don't need to modify anything, just place the file in the same folder where is a segmented mask to run the script.
+2) evaluate.py --> In this file you need to modify "train_dir" and "test_dir". You need to write paths where your training and testing datasets are stored. It evaluates the trained model on testing dataset and verify the dice score of each case. 
+ 
+3) predict.py --> In this file you need to modify only "model_dir" and write the path where the model file "best_metric_model.pth" is saved after training. It uploads one image and outputs one segmented mask: python predict.py -i image.nii.gz -o seg.nii.gz
+     
+4) slicer.py -->  In this file you don't need to modify anything, just place the file in the same folder where is a segmented mask to run the script. It transforms segmented mask to make it suitable for 3D slicer visualization: python slicer.py -i seg.nii.gz -o name.nii.gz
 
 5) pytorchtools.py --> this file is for early stopping and it should be placed in the same folder where the train.py file is located. 
