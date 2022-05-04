@@ -29,9 +29,9 @@ Labels:
    In this file you need to modify "train_dir" and "test_dir". You need to write paths where your training and testing datasets are stored. 
 
 3) predict.py --> uploads one image and outputs one segmented mask: python predict.py -i image.nii.gz -o seg.nii.gz
-   In this file you need to modify only "model_dir" and write the path where the model file "best_metric_model.pth" is saved after training.
-   
-4) slicer.py --> transforms segmented mask to make it suitable for 3D slicer visualization: python slicer.py -i seg.nii.gz -o name.nii.gz
+   In this file you need to modify only "model_dir" and write the path where the model file "best_metric_model.pth" is saved after training. 
+      
+4) slicer.py -->  transforms segmented mask to make it suitable for 3D slicer visualization: python slicer.py -i seg.nii.gz -o name.nii.gz
    In this file you don't need to modify anything, just place the file in the same folder where is a segmented mask to run the script.
 
 5) pytorchtools.py --> this file is for early stopping and it should be placed in the same folder where the train.py file is located. 
