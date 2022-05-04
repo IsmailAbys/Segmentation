@@ -31,7 +31,7 @@ Labels:
 3) predict.py --> the inference to upload one image and receive one segmented mask: python predict.py -i image.nii.gz -o seg.nii.gz
    In this file you need to modify only "model_dir" and write the path where the model file "best_metric_model.pth" is saved after training.
    
-4) slicer.py --> to transform segmented mask and make it without background for 3D slicer visualization: python slicer.py -i seg.nii.gz -o name.nii.gz
+4) slicer.py --> transforms segmented mask to make it suitable for 3D slicer visualization: python slicer.py -i seg.nii.gz -o name.nii.gz
    In this file you don't need to modify anything, just place the file in the same folder where is a segmented mask to run the script.
 
 5) pytorchtools.py --> for early stopping and it should be placed in the same folder where the train file is located. README files describe the utility of the code and Requirements files include information about libraries used.
