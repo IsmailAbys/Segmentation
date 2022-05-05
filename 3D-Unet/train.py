@@ -115,7 +115,7 @@ def main(train_dir):
 
     # create a training data loader
     train_ds = CacheDataset(data=train_files, transform=train_transforms, cache_rate=1.0, num_workers=0)
-    train_loader = DataLoader(train_ds, batch_size=2, shuffle=True, num_workers=0)    #if you are getting a memory error, please change batch_size to 1. 
+    train_loader = DataLoader(train_ds, batch_size=1, shuffle=True, num_workers=0)    #if you are getting a memory error, please change batch_size to 1. 
 
     # create a validation data loader
     val_ds = CacheDataset(data=val_files, transform=val_transforms, cache_rate=1.0, num_workers=0)
