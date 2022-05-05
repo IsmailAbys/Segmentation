@@ -31,7 +31,6 @@ from monai.losses import DiceCELoss
 from monai.networks.nets import UNet
 from monai.networks.layers import Norm
 from monai.metrics import DiceMetric
-from monai.losses import DiceLoss
 from monai.inferers import sliding_window_inference
 from monai.data import CacheDataset, DataLoader, Dataset, decollate_batch
 from monai.config import print_config
