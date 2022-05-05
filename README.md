@@ -1,6 +1,6 @@
 # Segmentation
 
-This repository contains python scripts for 3D Unet architechture which is based on integrated MONAI into an existing PyTorch medical DL program. The instalation steps for pytorch and monai is written in "Requirements.txt" file.
+This repository contains python scripts for 3D Unet architechture which is based on integrated MONAI into an existing PyTorch medical DL program. The instalation steps for pytorch and monai is written in "installation.txt" file.
 
 The Pelvis dataset can be downloaded https://zenodo.org/record/4588403#.Ym-WotpBy3B
 The cases that should be used for training and testing are mentioned in "Dataset.xlsx" file. 
