@@ -18,11 +18,11 @@ Create "train_dir" and "test_dir" folders where will be placed corresponding dat
 * Size: 60 cases (41 Training + 19 Testing)
 
 Labels: 
-0: background, 
-1: sacrum, 
-2: right_hip, 
-3: left_hip, 
-4: lumbar_vertebra    
+* 0: background, 
+* 1: sacrum, 
+* 2: right_hip, 
+* 3: left_hip, 
+* 4: lumbar_vertebra    
 
 1) train.py --> 3D Unet training which works with Early Stopping. In this file you need to modify only "train_dir" and write the path where your training dataset is stored. If you are getting a memory error (CUDA out of memory), in "train_loader" change batch_size to 1.
 
