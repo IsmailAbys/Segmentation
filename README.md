@@ -9,14 +9,13 @@ The Pelvis dataset can be downloaded https://zenodo.org/record/4588403#.Ym-WotpB
 The cases that should be used for training and testing are mentioned in "Dataset.xlsx" file. 
 Create "train_dir" and "test_dir" folders where will be placed corresponding datasets (images with their masks).
 
-Dataset: dataset6 (CLINIC) 
-Images: CTPelvic1K_dataset6_data.tar.gz
-Masks: CTPelvic1K_dataset6_Anonymized_mask.tar.gz
-
-Target: Pelvis
-Modality: CT
-Format: NIFTI
-Size: 60 cases (41 Training + 19 Testing)
+* Dataset: dataset6 (CLINIC) 
+* Images: CTPelvic1K_dataset6_data.tar.gz
+* Masks: CTPelvic1K_dataset6_Anonymized_mask.tar.gz
+* Target: Pelvis
+* Modality: CT
+* Format: NIFTI
+* Size: 60 cases (41 Training + 19 Testing)
 
 Labels: 
 0: background, 
