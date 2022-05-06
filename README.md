@@ -24,6 +24,9 @@ Labels:
 * 3: left_hip, 
 * 4: lumbar_vertebra    
 
+
+Description of Python files:
+
 1) train.py --> 3D Unet training which works with Early Stopping. In this file you need to modify only "train_dir" and write the path where your training dataset is stored. If you are getting a memory error (CUDA out of memory), in "train_loader" change batch_size to 1.
 
 2) evaluate.py --> In this file you need to modify "train_dir" and "test_dir". You need to write paths where your training and testing datasets are stored. It evaluates the trained model on testing dataset and verify the dice score of each case. 
