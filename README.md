@@ -12,6 +12,7 @@ Create "train_dir" and "test_dir" folders where will be placed corresponding dat
 Dataset: dataset6 (CLINIC) 
 Images: CTPelvic1K_dataset6_data.tar.gz
 Masks: CTPelvic1K_dataset6_Anonymized_mask.tar.gz
+
 Target: Pelvis
 Modality: CT
 Format: NIFTI
