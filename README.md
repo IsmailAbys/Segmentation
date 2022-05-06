@@ -25,7 +25,7 @@ Labels:
 * 4: lumbar_vertebra    
 
 
-Description of Python files:
+Description of python files:
 
 1) train.py --> 3D Unet training which works with Early Stopping. In this file you need to modify only "train_dir" and write the path where your training dataset is stored. If you are getting a memory error (CUDA out of memory), in "train_loader" change batch_size to 1.
 
