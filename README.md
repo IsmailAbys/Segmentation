@@ -1,6 +1,6 @@
 # Segmentation
 
-This repository contains python scripts for 3D Unet architechture which is based on integrated MONAI into an existing PyTorch medical DL program. 
+This repository contains scripts for 3D Unet architechture which is based on integrated MONAI into an existing PyTorch medical DL program. 
 
 * Install the requirements.txt file using 'pip install -r requirements.txt'
 * The instalation steps for pytorch and monai is written in "installation.txt" file.
@@ -25,7 +25,7 @@ Labels:
 * 4: lumbar_vertebra    
 
 
-Description of python files:
+Description of python scripts:
 
 1) train.py --> 3D Unet training which works with Early Stopping. In this file you need to modify only "train_dir" and write the path where your training dataset is stored. If you are getting a memory error (CUDA out of memory), in "train_loader" change batch_size to 1.
 
