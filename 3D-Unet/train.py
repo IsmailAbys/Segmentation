@@ -228,12 +228,6 @@ def main(train_dir):
     fig = plt.figure(figsize=(10,8))
     plt.plot(range(1,len(metric_values)+1), metric_values, label='Validation Mean Dice')
     plt.plot(range(1,len(train_values)+1), train_values, label='Training Mean Dice')
-
-
-    # find position of the highest validation mean dice
-    maxposs = metric_values.index(max(metric_values))+1 
-    plt.axvline(maxposs, linestyle='--', color='r',label='Early Stopping Checkpoint')
-
     plt.xlabel('Epochs')
     plt.ylabel('Mean Dice')
     plt.ylim(0, 1.0) 
