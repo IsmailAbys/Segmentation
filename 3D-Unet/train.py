@@ -212,6 +212,9 @@ def main(train_dir):
                      f'Validation Mean Dice: {metric:.5f} ')
 
         print(print_msg)
+        
+        # array = np.array(metric_values)
+        # np.savetxt('E:/dicescore.csv', array, delimiter=',')  #You can open this code if you want to save the validation mean dice on csv file.
     
         early_stopping(metric, model)
         
@@ -221,9 +224,6 @@ def main(train_dir):
         
     torch.save(model.state_dict(), os.path.join(train_dir, "best_metric_model.pth"))    #saving the trained model
     
-    # array = np.array(metric_values)
-    # np.savetxt('E:/dicescore.csv', array, delimiter=',')  #You can open this code if you want to save the validation mean dice on csv file.
-
 
     # visualize the mean dice when the network trained 
     fig = plt.figure(figsize=(10,8))
