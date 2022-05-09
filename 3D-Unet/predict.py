@@ -58,7 +58,7 @@ def main():
         EnsureChannelFirstd(keys="image"),
         Orientationd(keys=["image"], axcodes="RAS"),
         Spacingd(keys=["image"], pixdim=(1.0, 1.0, 1.0), mode="bilinear"),
-        ScaleIntensityRanged(keys=["image"], a_min=-120, a_max=360,b_min=0.0, b_max=1.0, clip=True,),
+        ScaleIntensityRanged(keys=["image"], a_min=-120, a_max=360,b_min=0.0, b_max=4.0, clip=True,),
         CropForegroundd(keys=["image"], source_key="image"),
         EnsureTyped(keys="image"),
         ])
