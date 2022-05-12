@@ -27,10 +27,10 @@ from monai.transforms import (
     Invertd,
 )
 
-root_dir = "E:/Data"
-csv_path = "E:/Data/data_github.csv"
-image_folder = "E:/Data/CTPelvic1K_dataset6_data"
-mask_folder = "E:/Data/ipcai2021_dataset6_Anonymized"
+root_dir = "D:/Data"
+csv_path = "D:/Data/data_github.csv"
+image_folder = "D:/Data/CTPelvic1K_dataset6_data"
+mask_folder = "D:/Data/ipcai2021_dataset6_Anonymized"
 
 
 def main(root_dir):
