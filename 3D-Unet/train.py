@@ -51,10 +51,10 @@ import numpy as np
 print_config()
 
 
-root_dir = "E:/Data"
-csv_path = "E:/Data/train_data.csv"
-image_folder = "E:/Data/CTPelvic1K_dataset6_data"
-mask_folder = "E:/Data/ipcai2021_dataset6_Anonymized"
+root_dir = "D:/Data"
+csv_path = "D:/Data/train_data.csv"
+image_folder = "D:/Data/CTPelvic1K_dataset6_data"
+mask_folder = "D:/Data/ipcai2021_dataset6_Anonymized"
 
 def main(root_dir):
     monai.config.print_config()
@@ -239,7 +239,7 @@ def main(root_dir):
         print(print_msg)
 
         #array = np.array(metric_values)
-        #np.savetxt('E:/Data/dicescore.csv', array, delimiter=',')  #You can open this code if you want to save the validation mean dice on csv file.
+        #np.savetxt('D:/Data/dicescore.csv', array, delimiter=',')  #You can open this code if you want to save the validation mean dice on csv file.
     
         early_stopping(metric, model)   #the training should stop on epoch 152 with a mean dice score around 0.95
         
