@@ -43,7 +43,7 @@ def main():
     args = parser.parse_args()
     
     #The path to the folder where the trained model is saved
-    model_dir  = "E:/Data"
+    model_dir  = "D:/Data"
 
     #The path of the image that will be used for the segmentation, user of the code can chose an image using command-line.
     test_images = sorted(glob.glob(os.path.join(args.input)))
