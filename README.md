@@ -10,9 +10,9 @@ Data extraction and CSV file:
 * Download Images: CTPelvic1K_dataset6_data.tar.gz
 * Download Masks: CTPelvic1K_dataset6_Anonymized_mask.tar.gz
 * Create a folder "Data" on your D drive where all images and masks will be extracted. 
-* To extract images write in command prompt and in your "Data" folder you will have a "CTPelvic1K_dataset6_data" folder with all images.
+* In order to extract images write in command prompt and in your "Data" folder you will have a "CTPelvic1K_dataset6_data" folder with 103 images.
 tar -xvzf C:\Users\Yourname\Downloads\CTPelvic1K_dataset6_data.tar.gz -C D:\Data
-* To extract masks write in command prompt and in your "Data" folder you will have a "ipcai2021_dataset6_Anonymized" folder with masks.
+* In order to extract masks write in command prompt and in your "Data" folder you will have a "ipcai2021_dataset6_Anonymized" folder with 103 masks.
 tar -xvzf C:\Users\Yourname\Downloads\CTPelvic1K_dataset6_Anonymized_mask.tar.gz -C D:\Data
 * Use data_github.csv file, which will help to automaticly select "train_images", "train_masks", "test_images" and "	test_masks".
 
