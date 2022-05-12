@@ -14,8 +14,7 @@ Description of Dataset, extraction of data and CSV file:
 tar -xvzf C:\Users\Yourname\Downloads\CTPelvic1K_dataset6_data.tar.gz -C D:\Data
 * In order to extract masks write in command prompt and in your "Data" folder you will have a "ipcai2021_dataset6_Anonymized" folder with 103 masks.
 tar -xvzf C:\Users\Yourname\Downloads\CTPelvic1K_dataset6_Anonymized_mask.tar.gz -C D:\Data
-
-By using "data_github.csv" file, "CustomDataset" class in the scripts will automaticly select "train_images", "train_masks", "test_images" and "	test_masks".
+* Use data_github.csv file, which will help to automaticly select "train_images", "train_masks", "test_images" and "	test_masks".
 
 * Dataset: dataset6 (CLINIC) 
 * Target: Pelvis
