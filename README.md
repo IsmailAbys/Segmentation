@@ -6,7 +6,7 @@ This repository contains scripts for 3D Unet architechture which is based on int
 * The instalation steps for pytorch and monai is written in "installation.txt" file.
 
 Description of Dataset, extraction of data and CSV file:
-The Pelvis dataset can be downloaded https://zenodo.org/record/4588403#.Ym-WotpBy3B
+_The Pelvis dataset can be downloaded https://zenodo.org/record/4588403#.Ym-WotpBy3B
 * Images: CTPelvic1K_dataset6_data.tar.gz
 * Masks: CTPelvic1K_dataset6_Anonymized_mask.tar.gz
 Create a folder "Data" on your D drive where all images and masks will be extracted. 
