@@ -14,7 +14,7 @@ Data extraction and CSV file:
 * tar -xvzf C:\Users\Yourname\Downloads\CTPelvic1K_dataset6_data.tar.gz -C D:\Data
 * In order to extract masks, in Command Prompt write the command below and in your "Data" folder you will have a "ipcai2021_dataset6_Anonymized" folder with 103 masks.
 * tar -xvzf C:\Users\Yourname\Downloads\CTPelvic1K_dataset6_Anonymized_mask.tar.gz -C D:\Data
-* Use "data_github.csv" file, which will help you to automaticly select train_images, train_masks, test_images and test_masks. Please place the csv file in your "Data" folder.
+* Use "data_github.csv" file, which will help you to automatically select train_images, train_masks, test_images and test_masks. Please place the csv file in your "Data" folder.
 
 
 Dataset description:
