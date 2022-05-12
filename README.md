@@ -6,15 +6,15 @@ This repository contains scripts for 3D Unet architechture which is based on int
 * The instalation steps for pytorch and monai is written in "installation.txt" file.
 
 Data extraction and CSV file:
-* The Pelvis dataset can be downloaded https://zenodo.org/record/4588403#.Ym-WotpBy3B
+The Pelvis dataset can be downloaded https://zenodo.org/record/4588403#.Ym-WotpBy3B
 * Download Images: CTPelvic1K_dataset6_data.tar.gz
 * Download Masks: CTPelvic1K_dataset6_Anonymized_mask.tar.gz
-* Create a folder "Data" on your D drive where all images and masks will be extracted. 
-* In order to extract images write in command prompt and in your "Data" folder you will have a "CTPelvic1K_dataset6_data" folder with 103 images.
-tar -xvzf C:\Users\Yourname\Downloads\CTPelvic1K_dataset6_data.tar.gz -C D:\Data
-* In order to extract masks write in command prompt and in your "Data" folder you will have a "ipcai2021_dataset6_Anonymized" folder with 103 masks.
-tar -xvzf C:\Users\Yourname\Downloads\CTPelvic1K_dataset6_Anonymized_mask.tar.gz -C D:\Data
-* Use data_github.csv file, which will help to automaticly select "train_images", "train_masks", "test_images" and "	test_masks".
+Create a folder "Data" on your D drive where all images and masks will be extracted. 
+In order to extract images write in command prompt and in your "Data" folder you will have a "CTPelvic1K_dataset6_data" folder with 103 images.
+* tar -xvzf C:\Users\Yourname\Downloads\CTPelvic1K_dataset6_data.tar.gz -C D:\Data
+In order to extract masks write in command prompt and in your "Data" folder you will have a "ipcai2021_dataset6_Anonymized" folder with 103 masks.
+* tar -xvzf C:\Users\Yourname\Downloads\CTPelvic1K_dataset6_Anonymized_mask.tar.gz -C D:\Data
+Use data_github.csv file, which will help to automaticly select "train_images", "train_masks", "test_images" and "	test_masks".
 
 
 Dataset description:
