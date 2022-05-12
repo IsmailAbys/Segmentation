@@ -36,14 +36,14 @@ Labels:
 
 Description of python scripts:
 
-1) train.py --> 3D Unet training which works with Early Stopping. In this file you need to modify only "train_dir" and write the path where your training dataset is stored. If you are getting a memory error (CUDA out of memory), in "train_loader" change batch_size to 1.
+1) train.py --> 3D Unet training which works with Early Stopping. 
 
-2) evaluate.py --> In this file you need to modify "train_dir" and "test_dir". You need to write paths where your training and testing datasets are stored. It evaluates the trained model on testing dataset and verify the dice score of each case. 
+2) evaluate.py --> Evaluates the trained model on testing dataset and verify the dice score of each case. 
  
-3) predict.py --> In this file you need to modify only "model_dir" and write the path where the model file "best_metric_model.pth" is saved after training. It uploads one image and output gives one segmented mask: 
+3) predict.py --> Uploads one image and output gives one segmented mask: 
 python predict.py -i image.nii.gz -o seg.nii.gz
      
-4) slicer.py -->  In this file you don't need to modify anything, just place the file in the same folder where is a segmented mask to run the script. It transforms segmented mask to make it suitable for 3D slicer visualization: 
+4) slicer.py -->  Transforms segmented mask to make it suitable for 3D slicer visualization: 
 python slicer.py -i seg.nii.gz -o name.nii.gz
 
 5) pytorchtools.py --> for early stopping and must be placed in the same folder where the train.py file is located. 
