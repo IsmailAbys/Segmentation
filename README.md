@@ -5,13 +5,19 @@ This repository contains scripts for 3D Unet architechture which is based on int
 * Install the requirements.txt file by using 'pip install -r requirements.txt'
 * The instalation steps for pytorch and monai is written in "installation.txt" file.
 
+Description of Dataset, extraction of data and CSV file:
 The Pelvis dataset can be downloaded https://zenodo.org/record/4588403#.Ym-WotpBy3B
-The cases that should be used for training and testing are mentioned in "Dataset.xlsx" file. 
-Create "train_dir" and "test_dir" folders where will be placed corresponding datasets (images with their masks).
-
-* Dataset: dataset6 (CLINIC) 
 * Images: CTPelvic1K_dataset6_data.tar.gz
 * Masks: CTPelvic1K_dataset6_Anonymized_mask.tar.gz
+Create a folder "Data" on your D drive where all images and masks will be extracted. 
+In order to extract images write in command prompt and in your "Data" folder you will have a "CTPelvic1K_dataset6_data" folder with 103 images.
+tar -xvzf C:\Users\Yourname\Downloads\CTPelvic1K_dataset6_data.tar.gz -C D:\Data
+In order to extract masks write in command prompt and in your "Data" folder you will have a "ipcai2021_dataset6_Anonymized" folder with 103 masks.
+tar -xvzf C:\Users\Yourname\Downloads\CTPelvic1K_dataset6_Anonymized_mask.tar.gz -C D:\Data
+
+By using "data_github.csv" file, "CustomDataset" class in the scripts will automaticly select "train_images", "train_masks", "test_images" and "	test_masks".
+
+* Dataset: dataset6 (CLINIC) 
 * Target: Pelvis
 * Modality: CT
 * Format: NIFTI
@@ -23,6 +29,8 @@ Labels:
 * 2: right_hip, 
 * 3: left_hip, 
 * 4: lumbar_vertebra    
+
+
 
 
 Description of python scripts:
