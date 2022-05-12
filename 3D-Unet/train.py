@@ -241,7 +241,7 @@ def main(root_dir):
         #array = np.array(metric_values)
         #np.savetxt('D:/Data/dicescore.csv', array, delimiter=',')  #You can open this code if you want to save the validation mean dice on csv file.
     
-        early_stopping(metric, model)   #the training should stop on epoch 152 with a mean dice score around 0.95
+        early_stopping(metric, model)   
         
         if early_stopping.early_stop:
             print("Early stopping")
