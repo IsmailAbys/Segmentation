@@ -218,7 +218,7 @@ def main(train_dir):
     
         early_stopping(metric, model)
         
-        if early_stopping.early_stop:
+        if early_stopping.early_stop:     #the training should stop on epoch 152 with a mean dice score around 0.95
             print("Early stopping")
             break
         
