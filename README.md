@@ -22,7 +22,7 @@ Dataset description:
 * Target: Pelvis
 * Modality: CT
 * Format: NIFTI
-* Size: 60 cases (41 Training + 19 Testing)
+* Size: 55 cases (41 Training + 14 Testing)
 
 Labels: 
 * 0: background, 
