@@ -165,7 +165,7 @@ def main(root_dir):
     torch.backends.cudnn.benchmark = True    
 
 
-    max_epochs = 300
+    max_epochs = 500
     val_interval = 1
 
     train_values = []
