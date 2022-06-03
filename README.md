@@ -42,8 +42,11 @@ Description of python scripts:
  
 3) predict.py --> Uploads one image and output gives one segmented mask: 
 * python predict.py -i image.nii.gz -o seg.nii.gz
+
+4)  predict_2.py --> Uploads one image and output gives one segmented mask: 
+* python predict.py -i "dicom path" -o "image name"
      
-4) slicer.py -->  Transforms segmented mask to make it suitable for 3D slicer visualization: 
+5) slicer.py -->  Transforms segmented mask to make it suitable for 3D slicer visualization: 
 * python slicer.py -i seg.nii.gz -o name.nii.gz
 
-5) pytorchtools.py --> for early stopping and must be placed in the same folder where the train.py file is located. 
+6) pytorchtools.py --> for early stopping and must be placed in the same folder where the train.py file is located. 
