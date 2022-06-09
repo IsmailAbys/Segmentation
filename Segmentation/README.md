@@ -44,7 +44,7 @@ Description of python scripts:
 * python predict.py -i image.nii.gz -o seg.nii.gz
 
 4)  predict_2.py --> Uploads one image and output gives one segmented mask: 
-* python predict_2.py -i dicom path -o image name
+* python predict_2.py -i dicom_path -o image_name
      
 5) slicer.py -->  Transforms segmented mask to make it suitable for 3D slicer visualization: 
 * python slicer.py -i seg.nii.gz -o name.nii.gz
